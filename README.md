@@ -25,12 +25,8 @@ rails s
 
 ## Endereço local
 
-```
 http://localhost:3000
-```
 
 ## Endereço mailcatcher local
 
-```
 http://localhost:1080
-```
