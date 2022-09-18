@@ -14,7 +14,7 @@ Repositório da API de e-commerce de jogos online do bootcamp OneBitCode
 - RSpec
 - Factory bot
 - Faker
-- Shouda matchers
+- Shoulda matchers
 
 ## Criando do banco de dados
 
