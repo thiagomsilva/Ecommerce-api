@@ -15,6 +15,7 @@ Repositório da API de e-commerce de jogos online do bootcamp OneBitCode
 - Factory bot
 - Faker
 - Shoulda matchers
+- jbuilder
 
 ## Criando do banco de dados
 
