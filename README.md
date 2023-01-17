@@ -17,10 +17,10 @@ Repositório da API de e-commerce de jogos online do bootcamp OneBitCode
 - Shoulda matchers
 - jbuilder
 
-## Criando do banco de dados
+## Criando o banco de dados e rodando as migrations:
 
 ```
-rails db:create
+rails db:create db:migrate
 ```
 
 ## Iniciando o projeto Back end
