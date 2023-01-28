@@ -9,13 +9,14 @@ Repositório da API de e-commerce de jogos online do bootcamp OneBitCode
 - Ruby 2.7.1
 - Rails 6.0.3.3
 - Postgresql
-- mailcatcher
+- Mailcatcher
 - Devise token auth
 - RSpec
 - Factory bot
 - Faker
 - Shoulda matchers
-- jbuilder
+- Active Storage
+- [JBuilder](https://github.com/rails/jbuilder)
 
 ## Criando o banco de dados e rodando as migrations:
 
