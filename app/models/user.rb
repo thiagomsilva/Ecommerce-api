@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class User < ActiveRecord::Base
+  # incluindo os concerns
+  include NameSearchable
+  include Paginatable
+  
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   include DeviseTokenAuth::Concerns::User

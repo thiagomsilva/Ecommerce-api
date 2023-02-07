@@ -1,4 +1,8 @@
 class Product < ApplicationRecord
+  # incluindo os concerns
+  include NameSearchable
+  include Paginatable
+  
   belongs_to :productable, polymorphic: true
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
