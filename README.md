@@ -30,6 +30,12 @@ rails db:create db:migrate
 rails s
 ```
 
+## Rodar os testes
+
+```
+bundle exec rspec
+```
+
 ## Endereço local
 
 http://localhost:3000
