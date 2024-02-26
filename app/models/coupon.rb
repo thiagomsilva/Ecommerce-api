@@ -1,5 +1,6 @@
 class Coupon < ApplicationRecord
   # incluindo o concern
+  include LikeSearchable
   include Paginatable
 
   validates :name, presence: true

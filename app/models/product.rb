@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   # incluindo os concerns
-  include NameSearchable
+  include LikeSearchable
   include Paginatable
 
   belongs_to :productable, polymorphic: true
