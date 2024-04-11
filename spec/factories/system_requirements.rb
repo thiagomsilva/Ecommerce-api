@@ -5,6 +5,6 @@ FactoryBot.define do
     storage { '5GB' }
     processor { 'AMD Ryzen 7' }
     memory { '2GB' }
-    video_board { 'GeForce RTX 2060' }
+    video_board { 'N/A' }
   end
 end
