@@ -30,15 +30,12 @@ if Rails.env.development? || Rails.env.test?
         game_name = Faker::Game.unique.title
         availability = [:available, :unavailable].sample
         categories_count = rand(0..3)
-        # featured = [true, false].sample
-        # price = Faker::Commerce.price(range: 5.0..30.0)
-        # release_date =  (0..15).to_a.sample.days.ago
+        featured = [true, false].sample
+        release_date =  (0..15).to_a.sample.days.ago
         game_categories_ids = []
         categories_count.times { game_categories_ids << Category.all.sample.id }
-        # game = create(:game, system_requirement: system_requirements.sample, release_date: release_date)
-        game = create(:game, system_requirement: system_requirements.sample)
-        # create(:product, name: game_name, status: availability, featured: featured, price: price,
-        create(:product, name: game_name, status: availability,
+        game = create(:game, system_requirement: system_requirements.sample, release_date: release_date)
+        create(:product, name: game_name, status: availability, featured: featured,
                          category_ids: game_categories_ids, productable: game)
       end
 
@@ -48,13 +45,6 @@ if Rails.env.development? || Rails.env.test?
         platform = [:steam, :battle_net, :origin].sample
         create(:license, status: status, platform: platform, game: game)
       end
-
-      # 10.times do
-      #   product = Product.all.sample
-      #   (1..10).to_a.sample.times do
-      #     product.wish_items.create(user: User.all.sample)
-      #   end
-      # end
     end
   end
 end
