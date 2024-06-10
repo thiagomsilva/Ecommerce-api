@@ -24,6 +24,12 @@ Repositório da API de e-commerce de jogos online do bootcamp OneBitCode (Em des
 rails db:create db:migrate
 ```
 
+## Criando dados fake para o banco de dados de desenvolvimento:
+
+```
+rails dev:prime
+```
+
 ## Iniciando o projeto Back end
 
 ```
